@@ -261,12 +261,7 @@ const bigProjects = {
       projectName: "Gene-omere",
       projectDesc:
         "A pioneering genomic analysis tool capable of detecting genetic abnormalities, classifying 75 organisms, and matching pathogens using a custom RNN model. Features DNA/protein sequence visualization and targeted therapy simulation.",
-      footerLink: [
-        {
-          name: "View at Global AI Summit",
-          url: "" // Add link if available
-        }
-      ]
+      footerLink: []
     },
     {
       image: require("./assets/images/epilepsyLogo.png"), // Add project image
@@ -377,16 +372,16 @@ const blogSection = {
   displayMediumBlogs: "false",
   blogs: [
     {
-      url: "https://medium.com/@aadyagoel14", // Update with actual URL
+      url: "https://aadyagoel14.medium.com/who-deserves-innovation-why-equitable-healthcare-is-the-future-49aeffca6cf3", // Update with actual URL
       title: "Who Deserves Innovation? Why Equitable Healthcare Is the Future",
       description:
         "Exploring why equitable access to healthcare innovation is not just a moral imperative but a scientific one."
     },
     {
-      url: "https://medium.com/@aadyagoel", // Update with actual URL
-      title: "From Code to Cure: Women Driving Innovation in Bioinformatics and Drug Discovery",
+      url: "https://medium.com/illumination/why-coffee-hits-you-differently-and-its-not-your-personality-2e0f1619a375", // Update with actual URL
+      title: "Why Coffee Hits You Differently (and It’s Not Your Personality)",
       description:
-        "Highlighting the impact of women researchers transforming bioinformatics and the drug discovery pipeline."
+        "Unpacking the science of what makes us weird, wired, and wonderful in analogies."
     }
   ],
   display: true
@@ -421,16 +416,16 @@ const talkSection = {
   display: true
 };
 
-// Podcast Section
+// // Podcast Section
 
-const podcastSection = {
-  title: emoji("Podcast 🎙️"),
-  subtitle: "FEATURED ON THE CCIR STUDENT RESEARCH SCHOLARS YOUTUBE SERIES",
-  podcast: [
-    "https://youtu.be/E6tlqdBErek?si=isT1DGPFWvxm6zPe" // Add your CCIR podcast/YouTube embed link here
-  ],
-  display: true
-};
+// const podcastSection = {
+//   title: emoji("Podcast 🎙️"),
+//   subtitle: "FEATURED ON THE CCIR STUDENT RESEARCH SCHOLARS YOUTUBE SERIES",
+//   podcast: [
+//     "https://youtu.be/E6tlqdBErek?si=isT1DGPFWvxm6zPe" // Add your CCIR podcast/YouTube embed link here
+//   ],
+//   display: true
+// };
 
 // Resume Section
 

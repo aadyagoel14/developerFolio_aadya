@@ -468,7 +468,7 @@ export {
   achievementSection,
   blogSection,
   talkSection,
-  podcastSection,
+  //podcastSection,
   contactInfo,
   twitterDetails,
   isHireable,

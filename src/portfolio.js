@@ -121,7 +121,7 @@ const educationInfo = {
     },
     {
       schoolName: "Vellore Institute of Technology, India",
-      logo: require("./assets/images/vitLogo.png"), // Add VIT logo to assets
+      logo: require("./assets/images/vitLogo.jpg"), // Add VIT logo to assets
       subHeader:
         "B.Tech Computer Science with Specialization in Bioinformatics",
       duration: "July 2021 – July 2025",
@@ -264,7 +264,7 @@ const bigProjects = {
       footerLink: []
     },
     {
-      image: require("./assets/images/epilepsyLogo.png"), // Add project image
+      image: require("./assets/images/epilepsyLogo.jpg"), // Add project image
       projectName: "Epilepsy Seizure Detection (EEG + Deep Learning)",
       projectDesc:
         "Detecting epilepsy in patients aged 3–22 using EEG brain signals with deep learning and signal processing. Published at ICIITCEE 2025.",
@@ -276,14 +276,14 @@ const bigProjects = {
       ]
     },
     {
-      image: require("./assets/images/suicidalBehaviorLogo.png"), // Add project image
+      image: require("./assets/images/suicidalBehaviorLogo.jpg"), // Add project image
       projectName: "Suicidal Behavior Detection",
       projectDesc:
         "NLP and neural networks to identify suicidal tendencies in online social media and fMRI data, classifying adolescents at risk. College capstone project.",
       footerLink: []
     },
     {
-      image: require("./assets/images/meddonna.png"), // Add project image
+      image: require("./assets/images/meddonnaLogo.jpg"), // Add project image
       projectName: "Meddonna – AI Healthcare Chatbot",
       projectDesc:
         "Intelligent generative chatbot using NLP for healthcare assistance with location-based services and multilingual speech & text support.",
@@ -317,7 +317,7 @@ const achievementSection = {
       title: "IEEE ICCCNT 2024 – Published Paper",
       subtitle:
         "Published 'Enhancing Image Feature Matching Detection: ORB & HDBSCAN Algorithm Integration' at the 15th International IEEE Conference on Computing, Communication and Networking Technologies, IIT Mandi.",
-      image: require("./assets/images/ieeeLogo.png"), // Add IEEE logo
+      image: require("./assets/images/ieeeLogo.jpg"), // Add IEEE logo
       imageAlt: "IEEE Logo",
       footerLink: [
         {
@@ -330,7 +330,7 @@ const achievementSection = {
       title: "IEEE ICCCIT 2025 – Published Paper",
       subtitle:
         "Published 'Leveraging Artificial Neural Networks for Breast Cancer Detection and Prognosis' at the IEEE International Conference on Computational, Communication and Information Technology.",
-      image: require("./assets/images/ieeeLogo.png"),
+      image: require("./assets/images/ieeeLogo.jpg"),
       imageAlt: "IEEE Logo",
       footerLink: [
         {
@@ -351,11 +351,11 @@ const achievementSection = {
       title: "Springer Journal – Under Peer Review",
       subtitle:
         "Research on 'Detection of Stock Market Manipulation using Deep Learning' (NUS Singapore) is under peer review at a Springer journal and available as a preprint on Research Square, ResearchGate, and OUCI.",
-      image: require("./assets/images/springerLogo.png"), // Add Springer logo
+      image: require("./assets/images/springerLogo.jpg"), // Add Springer logo
       imageAlt: "Springer Logo",
       footerLink: [{
           name: "View Paper",
-          url: "https://europepmc.org/article/ppr/ppr767548" // Add paper link
+          url: "https://www.researchgate.net/publication/376155469_Detection_of_Stock_Market_Manipulation_Using_Deep_Learning" // Add paper link
         }
       ]
     }
@@ -410,7 +410,7 @@ const talkSection = {
       title: "Gene-omere at Startup Mahakumbh 2025",
       subtitle: "New Delhi — 50,000+ global business leaders, part of 'Startup India @ 2047'",
       slides_url: "",
-      event_url: ""
+      event_url: "https://www.linkedin.com/feed/update/urn:li:activity:7313489258596421632/?utm_source=share&utm_medium=member_desktop&rcm=ACoAAERnCjQBGcpx8N9e8tfXkVWNrJA4m_ESNmU"
     }
   ],
   display: true
@@ -441,7 +441,6 @@ const contactInfo = {
   title: emoji("Contact Me ☎️"),
   subtitle:
     "Interested in collaboration or just want to connect? My inbox is open!",
-  number: "+1 412 616 5863",
   email_address: "aadyag@andrew.cmu.edu"
 };
 

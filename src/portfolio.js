@@ -3,387 +3,461 @@
 // To change portfolio colors globally go to the  _globalColor.scss file
 
 import emoji from "react-easy-emoji";
-import splashAnimation from "./assets/lottie/splashAnimation"; // Rename to your file name for custom animation
+import splashAnimation from "./assets/lottie/splashAnimation";
 
 // Splash Screen
 
 const splashScreen = {
-  enabled: true, // set false to disable splash screen
+  enabled: true,
   animation: splashAnimation,
-  duration: 2000 // Set animation duration as per your animation
+  duration: 2000
 };
 
 // Summary And Greeting Section
 
 const illustration = {
-  animated: true // Set to false to use static SVG
+  animated: true
 };
 
 const greeting = {
-  username: "Saad Pasta",
-  title: "Hi all, I'm Saad",
+  username: "Aadya Goel",
+  title: "Hi, I'm Aadya 👋",
   subTitle: emoji(
-    "A passionate Full Stack Software Developer 🚀 having an experience of building Web and Mobile applications with JavaScript / Reactjs / Nodejs / React Native and some other cool libraries and frameworks."
+    "An AI/ML Researcher and Biomedical Engineer 🧬 passionate about bridging artificial intelligence and medicine — from epilepsy detection and genomic analysis to multi-omic COVID research at UPMC, CMU, and beyond."
   ),
-  resumeLink:
-    "https://drive.google.com/file/d/1ofFdKF_mqscH8WvXkSObnVvC9kK7Ldlu/view?usp=sharing", // Set to empty to hide the button
-  displayGreeting: true // Set false to hide this section, defaults to true
+  resumeLink: "https://drive.google.com/file/d/1WzyQgD2pYswYnt64yilF0t2M3ghsv-1w/view?usp=sharing", // Add your Google Drive resume link here
+  displayGreeting: true
 };
 
 // Social Media Links
 
 const socialMediaLinks = {
-  github: "https://github.com/saadpasta",
-  linkedin: "https://www.linkedin.com/in/saadpasta/",
-  gmail: "saadpasta70@gmail.com",
-  gitlab: "https://gitlab.com/saadpasta",
-  facebook: "https://www.facebook.com/saad.pasta7",
-  medium: "https://medium.com/@saadpasta",
-  stackoverflow: "https://stackoverflow.com/users/10422806/saad-pasta",
-  // Instagram, Twitter and Kaggle are also supported in the links!
-  // To customize icons and social links, tweak src/components/SocialMedia
-  display: true // Set true to display this section, defaults to false
+  linkedin: "https://www.linkedin.com/in/aadyagoel", // Update with your actual LinkedIn URL
+  gmail: "aadyag@andrew.cmu.edu",
+  medium: "https://medium.com/@aadyagoel14", // Update with your actual Medium URL
+  display: true
 };
 
 // Skills Section
 
 const skillsSection = {
-  title: "What I do",
-  subTitle: "CRAZY FULL STACK DEVELOPER WHO WANTS TO EXPLORE EVERY TECH STACK",
+  title: "What I Do",
+  subTitle:
+    "AI/ML RESEARCHER AT THE INTERSECTION OF DEEP LEARNING, GENOMICS, AND BIOMEDICAL ENGINEERING",
   skills: [
     emoji(
-      "⚡ Develop highly interactive Front end / User Interfaces for your web and mobile applications"
+      "⚡ Build deep learning pipelines for biomedical signal processing, genomics, and clinical data"
     ),
-    emoji("⚡ Progressive Web Applications ( PWA ) in normal and SPA Stacks"),
     emoji(
-      "⚡ Integration of third party services such as Firebase/ AWS / Digital Ocean"
+      "⚡ Develop multi-omic and systems biology models integrating transcriptomic, proteomic, and clinical datasets"
+    ),
+    emoji(
+      "⚡ Design and deploy AI tools for healthcare — from seizure detection to cancer prognosis and genomic analysis"
     )
   ],
 
-  /* Make Sure to include correct Font Awesome Classname to view your icon
-https://fontawesome.com/icons?d=gallery */
-
   softwareSkills: [
     {
-      skillName: "html-5",
-      fontAwesomeClassname: "fab fa-html5"
-    },
-    {
-      skillName: "css3",
-      fontAwesomeClassname: "fab fa-css3-alt"
-    },
-    {
-      skillName: "sass",
-      fontAwesomeClassname: "fab fa-sass"
-    },
-    {
-      skillName: "JavaScript",
-      fontAwesomeClassname: "fab fa-js"
-    },
-    {
-      skillName: "reactjs",
-      fontAwesomeClassname: "fab fa-react"
-    },
-    {
-      skillName: "nodejs",
-      fontAwesomeClassname: "fab fa-node"
-    },
-    {
-      skillName: "swift",
-      fontAwesomeClassname: "fab fa-swift"
-    },
-    {
-      skillName: "npm",
-      fontAwesomeClassname: "fab fa-npm"
-    },
-    {
-      skillName: "sql-database",
-      fontAwesomeClassname: "fas fa-database"
-    },
-    {
-      skillName: "aws",
-      fontAwesomeClassname: "fab fa-aws"
-    },
-    {
-      skillName: "firebase",
-      fontAwesomeClassname: "fas fa-fire"
-    },
-    {
-      skillName: "python",
+      skillName: "Python",
       fontAwesomeClassname: "fab fa-python"
     },
     {
-      skillName: "docker",
-      fontAwesomeClassname: "fab fa-docker"
+      skillName: "R",
+      fontAwesomeClassname: "fas fa-flask"
+    },
+    {
+      skillName: "TensorFlow / PyTorch",
+      fontAwesomeClassname: "fas fa-brain"
+    },
+    {
+      skillName: "SQL",
+      fontAwesomeClassname: "fas fa-database"
+    },
+    {
+      skillName: "Microsoft Azure",
+      fontAwesomeClassname: "fab fa-microsoft"
+    },
+    {
+      skillName: "GitHub",
+      fontAwesomeClassname: "fab fa-github"
+    },
+    {
+      skillName: "React.js",
+      fontAwesomeClassname: "fab fa-react"
+    },
+    {
+      skillName: "Node.js",
+      fontAwesomeClassname: "fab fa-node"
+    },
+    {
+      skillName: "OpenCV / Image Processing",
+      fontAwesomeClassname: "fas fa-camera"
+    },
+    {
+      skillName: "Bioinformatics (Biopython, NCBI BLAST)",
+      fontAwesomeClassname: "fas fa-dna"
     }
   ],
-  display: true // Set false to hide this section, defaults to true
+  display: true
 };
 
 // Education Section
 
 const educationInfo = {
-  display: true, // Set false to hide this section, defaults to true
+  display: true,
   schools: [
     {
-      schoolName: "Harvard University",
-      logo: require("./assets/images/harvardLogo.png"),
-      subHeader: "Master of Science in Computer Science",
-      duration: "September 2017 - April 2019",
-      desc: "Participated in the research of XXX and published 3 papers.",
+      schoolName: "Carnegie Mellon University",
+      logo: require("./assets/images/cmuLogo.png"), // Add CMU logo to assets
+      subHeader:
+        "MS Artificial Intelligence Engineering – Biomedical Engineering (Research Track)",
+      duration: "August 2025 – July 2027",
+      desc: "GPA: 4.00 | Dean's Honors | Biomedical Engineering Department Head's Fellowship",
       descBullets: [
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit"
+        "Poster Presenter at the 2025 CMU Forum on Biomedical Engineering (872+ attendees) — showcased a genetic analysis tool for understanding viral pathogenic mechanisms",
+        "Emerging Leaders Mentor (2025–present), mentoring undergraduates in leadership and community engagement",
+        "Graduate Student Researcher at UPMC collaborating with researchers from UPMC, NIH, and Yale on multi-omic and health technology research"
       ]
     },
     {
-      schoolName: "Stanford University",
-      logo: require("./assets/images/stanfordLogo.png"),
-      subHeader: "Bachelor of Science in Computer Science",
-      duration: "September 2013 - April 2017",
-      desc: "Ranked top 10% in the program. Took courses about Software Engineering, Web Security, Operating Systems, ...",
-      descBullets: ["Lorem ipsum dolor sit amet, consectetur adipiscing elit"]
+      schoolName: "Vellore Institute of Technology, India",
+      logo: require("./assets/images/vitLogo.png"), // Add VIT logo to assets
+      subHeader:
+        "B.Tech Computer Science with Specialization in Bioinformatics",
+      duration: "July 2021 – July 2025",
+      desc: "CGPA: 8.83 | Class Rank: 15th out of 174 students (Top 8%)",
+      descBullets: [
+        "Courses: Artificial Intelligence, Data Analytics in Bioinformatics, Molecular Biology, Cell Biology & Genetics, Data Structures & Algorithms, Machine Learning, Probability & Statistics",
+        "Capstone: Identification of Suicidal Behavior using Deep Learning Models — NLP and fMRI analysis"
+      ]
     }
   ]
 };
 
-// Your top 3 proficient stacks/tech experience
+// Proficiency Section
 
 const techStack = {
-  viewSkillBars: true, //Set it to true to show Proficiency Section
+  viewSkillBars: true,
   experience: [
     {
-      Stack: "Frontend/Design", //Insert stack or technology you have experience in
-      progressPercentage: "90%" //Insert relative proficiency in percentage
+      Stack: "Machine Learning & Deep Learning",
+      progressPercentage: "92%"
     },
     {
-      Stack: "Backend",
-      progressPercentage: "70%"
+      Stack: "Biomedical & Genomic Data Analysis",
+      progressPercentage: "88%"
     },
     {
-      Stack: "Programming",
-      progressPercentage: "60%"
+      Stack: "Python & Scientific Computing",
+      progressPercentage: "90%"
+    },
+    {
+      Stack: "NLP & Signal Processing",
+      progressPercentage: "80%"
+    },
+    {
+      Stack: "Frontend Development (React, Flutter)",
+      progressPercentage: "65%"
     }
   ],
-  displayCodersrank: false // Set true to display codersrank badges section need to changes your username in src/containers/skillProgress/skillProgress.js:17:62, defaults to false
+  displayCodersrank: false
 };
 
-// Work experience section
+// Work Experience Section
 
 const workExperiences = {
-  display: true, //Set it to true to show workExperiences Section
+  display: true,
   experience: [
     {
-      role: "Software Engineer",
-      company: "Facebook",
-      companylogo: require("./assets/images/facebookLogo.png"),
-      date: "June 2018 – Present",
-      desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      role: "Graduate Student Researcher",
+      company: "University of Pittsburgh Medical Centre (UPMC)",
+      companylogo: require("./assets/images/upmcLogo.png"), // Add UPMC logo
+      date: "September 2025 – Present",
+      desc: "Collaborating with Dr. Lianghui Zhang (UPMC), Dr. Siyang Zheng (CMU), and researchers from NIH and Yale on multi-omic research addressing virus-induced endothelial dysfunction.",
       descBullets: [
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit"
+        "Developing AI/ML and systems biology pipelines integrating transcriptomic, proteomic, and clinical datasets",
+        "Building multiscale mathematical models for acute and post-COVID chronic comorbidities",
+        "Applying ML to large-scale biomedical data from NIH ACTIV4c, Pitt Long COVID, and other cohorts"
       ]
     },
     {
-      role: "Front-End Developer",
-      company: "Quora",
-      companylogo: require("./assets/images/quoraLogo.png"),
-      date: "May 2017 – May 2018",
-      desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+      role: "Head of Genomics & Lead – Elderly & Women Care Division",
+      company: "SETV Global (Healthcare Technology Startup)",
+      companylogo: require("./assets/images/setvLogo.png"), // Add SETV logo
+      date: "February 2025 – July 2025",
+      desc: "Led a team of 40 interns to refine Gene-omere, a pioneering genomic analysis tool. Conducted HMPV analysis submitted to WHO, NIH, and CEPI.",
+      descBullets: [
+        "Presented Gene-omere at Startup Mahakumbh 2025 in New Delhi to 50,000+ business leaders from 50+ countries",
+        "Oversaw marketing and deployment of SETV solutions across Elderly and Women Care divisions"
+      ]
     },
     {
-      role: "Software Engineer Intern",
-      company: "Airbnb",
-      companylogo: require("./assets/images/airbnbLogo.png"),
-      date: "Jan 2015 – Sep 2015",
-      desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+      role: "Research Scholar",
+      company: "Cambridge Centre for International Research (CCIR)",
+      companylogo: require("./assets/images/ccirLogo.png"), // Add CCIR logo
+      date: "May 2024 – June 2025",
+      desc: "Worked under Dr. Shadi Ghiasi (University of Oxford) on AI in Healthcare — biomedical sensors and EEG signal processing.",
+      descBullets: [
+        "Authored 'Epilepsy Seizure Detection based on EEG Signals using Machine Learning' — published at ICIITCEE 2025",
+        "Awarded CCIR STEM Scholarship and named CCIR Spotlight Scholar; invited to YouTube podcast series"
+      ]
+    },
+    {
+      role: "AI/ML Intern → Head of Genomics",
+      company: "SETV Global",
+      companylogo: require("./assets/images/setvLogo.png"),
+      date: "April 2024 – February 2025",
+      desc: "Developed AI solutions for chronic disease management. Built Meddonna, an intelligent generative healthcare chatbot with NLP, location-based services, and multilingual speech support.",
+      descBullets: [
+        "Developed breast cancer multi-class classification model using CNNs on mammography images",
+        "Led a team of 25 to build Gene-omere; presented at the 2024 Global AI Summit in Hyderabad to 2,500+ industry leaders"
+      ]
+    },
+    {
+      role: "Tech Consulting Intern – Data Analytics Division",
+      company: "Ernst & Young, New Delhi",
+      companylogo: require("./assets/images/eyLogo.png"), // Add EY logo
+      date: "August 2023 – October 2023",
+      desc: "Leveraged ML algorithms to personalize a healthcare navigation app. Contributed as a frontend developer in a CDAC and EY smart city initiative.",
+      descBullets: [
+        "Skills: React.js, Node.js, Flutter, GitHub"
+      ]
+    },
+    {
+      role: "Research Intern",
+      company: "Global Academic Internship Program, NUS Singapore",
+      companylogo: require("./assets/images/nusLogo.png"), // Add NUS logo
+      date: "December 2022 – June 2023",
+      desc: "Completed GAIP program on 'Data Analytics using Deep Learning'. Developed an Emotion Analysis in Sports model achieving 98.22% accuracy.",
+      descBullets: [
+        "Collaborated on 'Detection of Stock Market Manipulation using Deep Learning' with Dr. Tan from NUS — under peer review at a Springer journal"
+      ]
+    },
+    {
+      role: "Onsite Research Intern",
+      company: "Hewlett Packard Enterprise, Singapore",
+      companylogo: require("./assets/images/hpeLogo.png"), // Add HPE logo
+      date: "December 2022 – January 2023",
+      desc: "Completed a Big Data Analytics program, migrated applications to Microsoft Azure, and implemented ML analytics on UCI Datasets."
     }
   ]
 };
 
-/* Your Open Source Section to View Your Github Pinned Projects
-To know how to get github key look at readme.md */
+// Open Source / GitHub
 
 const openSource = {
-  showGithubProfile: "true", // Set true or false to show Contact profile using Github, defaults to true
-  display: true // Set false to hide this section, defaults to true
+  showGithubProfile: "true",
+  display: true
 };
 
-// Some big projects you have worked on
+// Big Projects Section
 
 const bigProjects = {
-  title: "Big Projects",
-  subtitle: "SOME STARTUPS AND COMPANIES THAT I HELPED TO CREATE THEIR TECH",
+  title: "Featured Projects",
+  subtitle: "RESEARCH TOOLS AND AI SYSTEMS I'VE BUILT AT THE FRONTIER OF BIOMEDICINE",
   projects: [
     {
-      image: require("./assets/images/saayaHealthLogo.webp"),
-      projectName: "Saayahealth",
-      projectDesc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+      image: require("./assets/images/geneomereLogo.png"), // Add project image
+      projectName: "Gene-omere",
+      projectDesc:
+        "A pioneering genomic analysis tool capable of detecting genetic abnormalities, classifying 75 organisms, and matching pathogens using a custom RNN model. Features DNA/protein sequence visualization and targeted therapy simulation.",
       footerLink: [
         {
-          name: "Visit Website",
-          url: "http://saayahealth.com/"
+          name: "View at Global AI Summit",
+          url: "" // Add link if available
         }
-        //  you can add extra buttons here.
       ]
     },
     {
-      image: require("./assets/images/nextuLogo.webp"),
-      projectName: "Nextu",
-      projectDesc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+      image: require("./assets/images/epilepsyLogo.png"), // Add project image
+      projectName: "Epilepsy Seizure Detection (EEG + Deep Learning)",
+      projectDesc:
+        "Detecting epilepsy in patients aged 3–22 using EEG brain signals with deep learning and signal processing. Published at ICIITCEE 2025.",
       footerLink: [
         {
-          name: "Visit Website",
-          url: "http://nextu.se/"
+          name: "Published Paper",
+          url: "https://ieeexplore.ieee.org/abstract/document/10915478" // Add paper link
         }
       ]
+    },
+    {
+      image: require("./assets/images/suicidalBehaviorLogo.png"), // Add project image
+      projectName: "Suicidal Behavior Detection",
+      projectDesc:
+        "NLP and neural networks to identify suicidal tendencies in online social media and fMRI data, classifying adolescents at risk. College capstone project.",
+      footerLink: []
+    },
+    {
+      image: require("./assets/images/meddonna.png"), // Add project image
+      projectName: "Meddonna – AI Healthcare Chatbot",
+      projectDesc:
+        "Intelligent generative chatbot using NLP for healthcare assistance with location-based services and multilingual speech & text support.",
+      footerLink: []
     }
   ],
-  display: true // Set false to hide this section, defaults to true
+  display: true
 };
 
-// Achievement Section
-// Include certificates, talks etc
+// Achievements Section
 
 const achievementSection = {
-  title: emoji("Achievements And Certifications 🏆 "),
+  title: emoji("Achievements & Publications 🏆"),
   subtitle:
-    "Achievements, Certifications, Award Letters and Some Cool Stuff that I have done !",
+    "Published research, awards, and recognitions across AI, biomedical engineering, and genomics.",
 
   achievementsCards: [
     {
-      title: "Google Code-In Finalist",
+      title: "CCIR Spotlight Scholar & STEM Scholarship",
       subtitle:
-        "First Pakistani to be selected as Google Code-in Finalist from 4000 students from 77 different countries.",
-      image: require("./assets/images/codeInLogo.webp"),
-      imageAlt: "Google Code-In Logo",
-      footerLink: [
-        {
-          name: "Certification",
-          url: "https://drive.google.com/file/d/0B7kazrtMwm5dYkVvNjdNWjNybWJrbndFSHpNY2NFV1p4YmU0/view?usp=sharing"
-        },
-        {
-          name: "Award Letter",
-          url: "https://drive.google.com/file/d/0B7kazrtMwm5dekxBTW5hQkg2WXUyR3QzQmR0VERiLXlGRVdF/view?usp=sharing"
-        },
-        {
-          name: "Google Code-in Blog",
-          url: "https://opensource.googleblog.com/2019/01/google-code-in-2018-winners.html"
+        "Nominated as CCIR Spotlight Scholar for exceptional research. Admitted to the highly competitive CCIR Future Scholars Program (5 students per course). Invited to the CCIR Student Research Scholars YouTube podcast.",
+      image: require("./assets/images/ccirLogo.png"),
+      imageAlt: "CCIR Logo",
+      footerLink: [{
+          name: "View Podcast",
+          url: "https://youtu.be/E6tlqdBErek?si=sLnZ0OfvOsbOlqI2" // Add paper link
         }
       ]
     },
     {
-      title: "Google Assistant Action",
+      title: "IEEE ICCCNT 2024 – Published Paper",
       subtitle:
-        "Developed a Google Assistant Action JavaScript Guru that is available on 2 Billion devices world wide.",
-      image: require("./assets/images/googleAssistantLogo.webp"),
-      imageAlt: "Google Assistant Action Logo",
+        "Published 'Enhancing Image Feature Matching Detection: ORB & HDBSCAN Algorithm Integration' at the 15th International IEEE Conference on Computing, Communication and Networking Technologies, IIT Mandi.",
+      image: require("./assets/images/ieeeLogo.png"), // Add IEEE logo
+      imageAlt: "IEEE Logo",
       footerLink: [
         {
-          name: "View Google Assistant Action",
-          url: "https://assistant.google.com/services/a/uid/000000100ee688ee?hl=en"
+          name: "View Paper",
+          url: "https://ieeexplore.ieee.org/abstract/document/10724016" // Add paper link
         }
       ]
     },
-
     {
-      title: "PWA Web App Developer",
-      subtitle: "Completed Certifcation from SMIT for PWA Web App Development",
-      image: require("./assets/images/pwaLogo.webp"),
-      imageAlt: "PWA Logo",
+      title: "IEEE ICCCIT 2025 – Published Paper",
+      subtitle:
+        "Published 'Leveraging Artificial Neural Networks for Breast Cancer Detection and Prognosis' at the IEEE International Conference on Computational, Communication and Information Technology.",
+      image: require("./assets/images/ieeeLogo.png"),
+      imageAlt: "IEEE Logo",
       footerLink: [
-        {name: "Certification", url: ""},
         {
-          name: "Final Project",
-          url: "https://pakistan-olx-1.firebaseapp.com/"
+          name: "View Paper",
+          url: "https://ieeexplore.ieee.org/abstract/document/10927800" // Add paper link
+        }
+      ]
+    },
+    {
+      title: "CMU Biomedical Engineering Department Head's Fellowship",
+      subtitle:
+        "Awarded the prestigious Department Head's Fellowship at Carnegie Mellon University's Biomedical Engineering department.",
+      image: require("./assets/images/cmuLogo.png"),
+      imageAlt: "CMU Logo",
+      footerLink: []
+    },
+    {
+      title: "Springer Journal – Under Peer Review",
+      subtitle:
+        "Research on 'Detection of Stock Market Manipulation using Deep Learning' (NUS Singapore) is under peer review at a Springer journal and available as a preprint on Research Square, ResearchGate, and OUCI.",
+      image: require("./assets/images/springerLogo.png"), // Add Springer logo
+      imageAlt: "Springer Logo",
+      footerLink: [{
+          name: "View Paper",
+          url: "https://europepmc.org/article/ppr/ppr767548" // Add paper link
         }
       ]
     }
   ],
-  display: true // Set false to hide this section, defaults to true
+  display: true
 };
 
 // Blogs Section
 
 const blogSection = {
-  title: "Blogs",
+  title: "Writing",
   subtitle:
-    "With Love for Developing cool stuff, I love to write and teach others what I have learnt.",
-  displayMediumBlogs: "true", // Set true to display fetched medium blogs instead of hardcoded ones
+    "I write about equitable healthcare, women in STEM, and the future of biomedical AI.",
+  displayMediumBlogs: "false",
   blogs: [
     {
-      url: "https://blog.usejournal.com/create-a-google-assistant-action-and-win-a-google-t-shirt-and-cloud-credits-4a8d86d76eae",
-      title: "Win a Google Assistant Tshirt and $200 in Google Cloud Credits",
+      url: "https://medium.com/@aadyagoel14", // Update with actual URL
+      title: "Who Deserves Innovation? Why Equitable Healthcare Is the Future",
       description:
-        "Do you want to win $200 and Google Assistant Tshirt by creating a Google Assistant Action in less then 30 min?"
+        "Exploring why equitable access to healthcare innovation is not just a moral imperative but a scientific one."
     },
     {
-      url: "https://medium.com/@saadpasta/why-react-is-the-best-5a97563f423e",
-      title: "Why REACT is The Best?",
+      url: "https://medium.com/@aadyagoel", // Update with actual URL
+      title: "From Code to Cure: Women Driving Innovation in Bioinformatics and Drug Discovery",
       description:
-        "React is a JavaScript library for building User Interface. It is maintained by Facebook and a community of individual developers and companies."
+        "Highlighting the impact of women researchers transforming bioinformatics and the drug discovery pipeline."
     }
   ],
-  display: true // Set false to hide this section, defaults to true
+  display: true
 };
 
-// Talks Sections
+// Talks Section
 
 const talkSection = {
-  title: "TALKS",
-  subtitle: emoji(
-    "I LOVE TO SHARE MY LIMITED KNOWLEDGE AND GET A SPEAKER BADGE 😅"
-  ),
+  title: "Talks & Presentations",
+  subtitle: emoji("SHARING RESEARCH AT CONFERENCES AND SUMMITS AROUND THE WORLD 🌏"),
 
   talks: [
     {
-      title: "Build Actions For Google Assistant",
-      subtitle: "Codelab at GDG DevFest Karachi 2019",
-      slides_url: "https://bit.ly/saadpasta-slides",
-      event_url: "https://www.facebook.com/events/2339906106275053/"
+      title: "Gene-omere: Revolutionizing Genomic Research",
+      subtitle: "2024 Global AI Summit, Hyderabad — 2,500+ industry leaders",
+      slides_url: "",
+      event_url: ""
+    },
+    {
+      title: "Genetic Analysis Tool for Viral Pathogenic Mechanisms",
+      subtitle: "2025 Carnegie Mellon Forum on Biomedical Engineering — 872+ attendees",
+      slides_url: "",
+      event_url: ""
+    },
+    {
+      title: "Gene-omere at Startup Mahakumbh 2025",
+      subtitle: "New Delhi — 50,000+ global business leaders, part of 'Startup India @ 2047'",
+      slides_url: "",
+      event_url: ""
     }
   ],
-  display: true // Set false to hide this section, defaults to true
+  display: true
 };
 
 // Podcast Section
 
 const podcastSection = {
   title: emoji("Podcast 🎙️"),
-  subtitle: "I LOVE TO TALK ABOUT MYSELF AND TECHNOLOGY",
-
-  // Please Provide with Your Podcast embeded Link
+  subtitle: "FEATURED ON THE CCIR STUDENT RESEARCH SCHOLARS YOUTUBE SERIES",
   podcast: [
-    "https://anchor.fm/codevcast/embed/episodes/DevStory---Saad-Pasta-from-Karachi--Pakistan-e9givv/a-a15itvo"
+    "https://youtu.be/E6tlqdBErek?si=isT1DGPFWvxm6zPe" // Add your CCIR podcast/YouTube embed link here
   ],
-  display: true // Set false to hide this section, defaults to true
+  display: true
 };
 
 // Resume Section
+
 const resumeSection = {
   title: "Resume",
   subtitle: "Feel free to download my resume",
-
-  // Please Provide with Your Podcast embeded Link
-  display: true // Set false to hide this section, defaults to true
+  display: true
 };
+
+// Contact Section
 
 const contactInfo = {
   title: emoji("Contact Me ☎️"),
   subtitle:
-    "Discuss a project or just want to say hi? My Inbox is open for all.",
-  number: "+92-0000000000",
-  email_address: "saadpasta70@gmail.com"
+    "Interested in collaboration or just want to connect? My inbox is open!",
+  number: "+1 412 616 5863",
+  email_address: "aadyag@andrew.cmu.edu"
 };
 
-// Twitter Section
+// Twitter Section (hidden — not in resume)
 
 const twitterDetails = {
-  userName: "twitter", //Replace "twitter" with your twitter username without @
-  display: true // Set true to display this section, defaults to false
+  userName: "twitter",
+  display: false
 };
 
-const isHireable = false; // Set false if you are not looking for a job. Also isHireable will be display as Open for opportunities: Yes/No in the GitHub footer
+const isHireable = true; // Open to research collaborations and opportunities
 
 export {
   illustration,
